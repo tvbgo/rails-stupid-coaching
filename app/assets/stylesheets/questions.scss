@@ -3,22 +3,45 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   text-align: center;
+  padding-top: 50px;
+
 }
 .form-container {
-  margin-top: 100px;
-  height: 80px;
+  height: 40%;
+  width: 60%;
+  border-bottom: 2px solid rgba(135, 135, 135, 0.4);
+  padding: 15px;
+  margin: 0 auto;
   .form {
-    padding: 25px;
+    margin-bottom: 10px;
   }
 }
 
-.answer {
+.answers {
+  padding: 15px;
   h3{
     font-style: italic;
     font-size: 20px;
     font-weight: lighter;
   }
-  .message {
+  .answer-card {
+    height: 80px;
+    padding: 10px;
+    border-left: 6px solid rgba(135, 135, 135, 0.4);
+    margin-bottom: 10px;
+    .your-message {
     font-weight: bold;
+
+    }
+  }
+  .coach-answer-card {
+    padding: 10px;
+    border-left: 6px solid rgba(135, 135, 135, 0.4);
+    height: 80px;
+    background-color: rgba(247, 179, 43, 0.5 );
+    .coach-answer {
+    font-weight: bold;
+
+    }
   }
 }

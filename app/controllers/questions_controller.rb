@@ -4,9 +4,13 @@ class QuestionsController < ApplicationController
 
   def answer
     @your_message = params[:question]
-    if @your_message.include? '?'
+    coach_answer(@your_message)
+  end
+
+  def coach_answer(message)
+    if message.include? '?'
       @response = 'Silly question, get dressed and go to work!'
-    elsif @your_message.downcase != 'i am going to work'
+    elsif message.downcase != 'i am going to work'
       @response = "I don't care, get dressed and go to work!"
     else
       @response = 'Great!'
